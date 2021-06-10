@@ -1,5 +1,21 @@
 @import "node_modules/normalize-scss/sass/normalize/import-now";
-
-h1 {
-  color: #ff0000;
-}
+// global
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+// blocks
+@import "blocks/page.scss";
+// header
+// @import "blocks/page-header.scss";
+// @import "blocks/main-nav.scss";
+// @import "blocks/intro.scss";
+// @import "blocks/order.scss";
+// main
+// @import "blocks/page-main.scss";
+// @import "blocks/facts.scss";
+// @import "blocks/types.scss";
+// @import "blocks/video.scss";
+// footer
+// @import "blocks/page-footer.scss";
+// @import "blocks/map.scss";
+// @import "blocks/contacts.scss";

@@ -4,17 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moon - велосипеды</title>
+  <title>Moon - Велосипеды</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin>
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div>
-      <img src="img/logo-moon.svg" alt="Логотип магазина «Moon»">
-      <p>Мы продаем велосипеды</p>
-      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-    </div>
     <nav class="main-nav">
       <ul>
         <li>
@@ -31,7 +28,12 @@
         </li>
       </ul>
     </nav>
-    <div>
+    <section class="intro">
+      <img src="img/logo-moon.svg" alt="Логотип магазина «Moon»">
+      <h2>Мы продаем велосипеды</h2>
+      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    </section>
+    <div class="order">
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <label class="visually-hidden" for="user-name">Ваше имя:</label>
@@ -54,7 +56,7 @@
         <li>Профессиональные консультации!</li>
       </ul>
     </section>
-    <section>
+    <section class="types">
       <h2>Виды велосипедов</h2>
       <ul>
         <li>
