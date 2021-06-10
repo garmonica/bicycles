@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,92 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-  <h1>Добро пожаловать</h1>
+<body class="page__body">
+  <header class="page-header">
+    <div>
+      <img src="img/logo-moon.svg" alt="Логотип магазина «Moon»">
+      <p>Мы продаем велосипеды</p>
+      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Виды велосипедов</a>
+        </li>
+        <li>
+          <a href="#">Видео про велосипеды</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <label class="visually-hidden" for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" placeholder="Введите Ваше Имя">
+        <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
+        <input id="user-phone" type="tel" placeholder="Введите Ваш номер телефона">
+        <button type="submit">Подобрать велосипед мечты</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
+    <section class="facts">
+      <h2>Несколько фактов о нас</h2>
+      <ul>
+        <li>Самый широкий выбор велосипедов!</li>
+        <li>Доставка велосипедов по всей России!</li>
+        <li>Большой выбор крутых аксессуаров!</li>
+        <li>Профессиональные консультации!</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Виды велосипедов</h2>
+      <ul>
+        <li>
+          <h3>Дорожный велосипед</h3>
+          <img src="img/road-bike.jpg" alt="Дорожный велосипед у кирпичной стены">
+        </li>
+        <li>
+          <h3>Горный велосипед</h3>
+          <img src="img/mountain-bike.jpg" alt="Горный велосипед в горах">
+        </li>
+        <li>
+          <h3>Детский велосипед</h3>
+          <img src="img/road-bike.jpg" alt="Розовый детский велосипед">
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <img src="img/video-preview.jpg" alt="Обложка видео про велосипеды">
+      <button type="button" aria-label="Кнопка воспроизведения видео"></button>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <h2>Как нас найти?</h2>
+    <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    <div class="map">
+      <img src="img/map.jpg" alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+      <!-- <iframe src="" frameborder="0"></iframe> -->
+    </div>
+    <div class="contacts">
+      <a href="mailto:puteshestviemechta@gmail.ru"
+        aria-label="Написать по указанной почте">puteshestviemechta@gmail.ru</a>
+      <a href="tel:+749978468446" aria-label="Позвонить по указанному телефону">+7 (499) -784-684-46</a>
+    </div>
+
+  </footer>
+
 </body>
 
 </html>
