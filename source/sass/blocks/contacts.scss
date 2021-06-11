@@ -1,0 +1,50 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 564px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contacts a {
+  display: block;
+  padding: 10px 15px 10px 40px;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba($basic-black, 0.5);
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    padding: 10px 15px 10px 43px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 10px 0 15px 50px;
+  }
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  color: $accent;
+}
+
+.contacts a:active {
+  color: rgba($basic-black, 0.2);
+}
+
+.contacts svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  @media (max-width: $tablet-width) {
+    left: 5px;
+  }
+}
