@@ -3,13 +3,14 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
+@import "global/container.scss";
 // blocks
 @import "blocks/page.scss";
 // header
-// @import "blocks/page-header.scss";
-// @import "blocks/main-nav.scss";
-// @import "blocks/intro.scss";
-// @import "blocks/order.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/order.scss";
 // main
 // @import "blocks/page-main.scss";
 // @import "blocks/facts.scss";
