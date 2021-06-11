@@ -468,6 +468,12 @@ html {
   max-width: 1246px;
   padding: 0 40px;
   margin: 0 auto; }
+  @media (max-width: 1023px) {
+    .container {
+      padding: 0 35px; } }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 16px; } }
 
 .page {
   height: 100%;
@@ -488,7 +494,7 @@ html {
   color: #000000; }
 
 .page-header {
-  background: #222222 url("../img/bg-bike.jpg") no-repeat center/cover;
+  background: #131314 url("../img/bg-bike.jpg") no-repeat center/cover;
   position: relative; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .page-header {
@@ -657,7 +663,7 @@ html {
       width: auto;
       margin: 0;
       padding: 25px 22px;
-      background: #222222 url("../img/bg-bike.jpg") no-repeat center/cover; } }
+      background: #131314 url("../img/bg-bike.jpg") no-repeat center/cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .intro {
       background-image: url("../img/bg-bike@2x.jpg"); } }
@@ -823,3 +829,127 @@ html {
 
 .order button:active {
   color: rgba(0, 0, 0, 0.5); }
+
+.video {
+  background: #131314; }
+
+.page-footer {
+  padding: 80px 35px;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .page-footer {
+      padding: 80px 0; } }
+
+.page-footer h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #1f1f1f; }
+  @media (max-width: 1023px) {
+    .page-footer h2 {
+      margin-bottom: 22px;
+      font-size: 24px; } }
+  @media (max-width: 767px) {
+    .page-footer h2 {
+      padding: 0 16px;
+      font-size: 18px; } }
+
+.page-footer p {
+  max-width: 555px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  font-size: 17px;
+  line-height: 31px;
+  color: rgba(0, 0, 0, 0.7); }
+  @media (max-width: 1023px) {
+    .page-footer p {
+      max-width: 100%;
+      margin-bottom: 20px; } }
+  @media (max-width: 767px) {
+    .page-footer p {
+      padding: 0 30px; } }
+
+.map {
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  position: relative; }
+  @media (max-width: 1023px) {
+    .map {
+      height: 545px;
+      margin-bottom: 11px; } }
+  @media (max-width: 767px) {
+    .map {
+      height: 250px;
+      margin-bottom: 20px; } }
+
+.map img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+  width: 100%;
+  height: 100%; }
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 564px;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .contacts {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.contacts a {
+  display: block;
+  padding: 10px 15px 10px 40px;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative; }
+  @media (max-width: 1023px) {
+    .contacts a {
+      padding: 10px 15px 10px 43px; } }
+  @media (max-width: 767px) {
+    .contacts a {
+      padding: 10px 0 15px 50px; } }
+
+.contacts a:hover,
+.contacts a:focus {
+  color: #0ad9c6; }
+
+.contacts a:active {
+  color: rgba(0, 0, 0, 0.2); }
+
+.contacts svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+  @media (max-width: 1023px) {
+    .contacts svg {
+      left: 5px; } }

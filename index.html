@@ -93,16 +93,29 @@
     </section>
   </main>
 
-  <footer class="page-footer" id="contacts">
+  <footer class="page-footer container" id="contacts">
     <h2>Как нас найти?</h2>
     <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     <div class="map">
-      <img src="img/map.jpg" alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19">
-      <!-- <iframe src="" frameborder="0"></iframe> -->
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+        <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+      </picture>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1623436035258!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="contacts">
-      <a href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать по указанной почте">puteshestviemechta@gmail.ru</a>
-      <a href="tel:+749978468446" aria-label="Позвонить по указанному телефону">+7 (499) -784-684-46</a>
+      <a href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать по указанной почте">
+        <svg class="prices__phone-icon" width="26" height="20">
+          <use xlink:href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        puteshestviemechta@gmail.ru
+      </a>
+      <a href="tel:+749978468446" aria-label="Позвонить по указанному телефону">
+        <svg class="prices__phone-icon" width="22" height="24">
+          <use xlink:href="img/sprite.svg#icon-phone"></use>
+        </svg>
+        +7 (499) -784-684-46</a>
     </div>
 
   </footer>
