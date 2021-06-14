@@ -56,7 +56,7 @@
   </header>
 
   <main class="page-main">
-    <section class="facts" id="facts">
+    <section class="facts container" id="facts">
       <h2>Несколько фактов о нас</h2>
       <ul>
         <li>Самый широкий выбор велосипедов!</li>
@@ -75,18 +75,28 @@
               srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 1024px)"
               srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
-            <img src="img/road-bike.jpg" srcset="img/road-bike.jpg@2x.jpg 2x"
-              alt="Дорожный велосипед у кирпичной стены">
+            <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" alt="Дорожный велосипед у кирпичной стены">
           </picture>
-
         </li>
         <li>
           <h3>Горный велосипед</h3>
-          <img src="img/mountain-bike.jpg" alt="Горный велосипед в горах">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
+            <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="Горный велосипед в горах">
+          </picture>
         </li>
         <li>
           <h3>Детский велосипед</h3>
-          <img src="img/road-bike.jpg" alt="Розовый детский велосипед">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/childrens-bike-tablet.webp 1x, img/childrens-bike-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/childrens-bike.webp 1x, img/childrens-bike@2x.webp 2x">
+            <img src="img/childrens-bike.jpg" srcset="img/childrens-bike@2x.jpg 2x" alt="Розовый детский велосипед">
+          </picture>
         </li>
       </ul>
     </section>
@@ -114,13 +124,13 @@
     </div>
     <div class="contacts">
       <a href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать по указанной почте">
-        <svg class="prices__phone-icon" width="26" height="20">
+        <svg width="26" height="20">
           <use xlink:href="img/sprite.svg#icon-mail"></use>
         </svg>
         puteshestviemechta@gmail.ru
       </a>
       <a href="tel:+749978468446" aria-label="Позвонить по указанному телефону">
-        <svg class="prices__phone-icon" width="22" height="24">
+        <svg width="22" height="24">
           <use xlink:href="img/sprite.svg#icon-phone"></use>
         </svg>
         +7 (499) -784-684-46</a>

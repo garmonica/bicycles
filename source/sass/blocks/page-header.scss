@@ -1,4 +1,5 @@
 .page-header {
+  margin-bottom: 150px;
   background: $dark-bg url("../img/bg-bike.jpg") no-repeat center / cover;
   position: relative;
 
@@ -7,6 +8,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 5px;
     background: $basic-white;
   }
 }

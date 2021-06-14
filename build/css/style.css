@@ -473,7 +473,7 @@ html {
       padding: 0 35px; } }
   @media (max-width: 767px) {
     .container {
-      padding: 0 16px; } }
+      padding: 0 14px; } }
 
 .page {
   height: 100%;
@@ -494,6 +494,7 @@ html {
   color: #000000; }
 
 .page-header {
+  margin-bottom: 150px;
   background: #131314 url("../img/bg-bike.jpg") no-repeat center/cover;
   position: relative; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -501,6 +502,7 @@ html {
       background-image: url("../img/bg-bike@2x.jpg"); } }
   @media (max-width: 1023px) {
     .page-header {
+      margin-bottom: 5px;
       background: #ffffff; } }
 
 @media (max-width: 1023px) {
@@ -829,6 +831,74 @@ html {
 
 .order button:active {
   color: rgba(0, 0, 0, 0.5); }
+
+.facts {
+  margin-bottom: 130px; }
+
+.facts h2 {
+  margin: 0 0 50px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #1f1f1f; }
+  @media (max-width: 1023px) {
+    .facts h2 {
+      margin-bottom: 28px;
+      font-size: 24px;
+      line-height: 41px; } }
+
+.facts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-left: -54px;
+  padding: 0;
+  list-style: none;
+  counter-reset: section; }
+  @media (max-width: 1023px) {
+    .facts ul {
+      margin-left: -48px; } }
+
+.facts li {
+  max-width: 245px;
+  margin-left: 54px;
+  margin-bottom: 43px;
+  padding: 55px 0 0;
+  position: relative;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000000; }
+  @media (max-width: 1023px) {
+    .facts li {
+      margin-left: 48px; } }
+  @media (max-width: 767px) {
+    .facts li {
+      max-width: 263px;
+      margin-bottom: 38px;
+      padding-top: 53px;
+      font-size: 18px; } }
+  .facts li::before {
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: -1.27px;
+    color: #0ad9c6; }
 
 .video {
   background: #131314; }
