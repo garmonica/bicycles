@@ -1,9 +1,13 @@
 .types {
-  padding: 147px 0;
+  padding: 147px 0 100px;
   background: $types-bg;
 
   @media (max-width: $tablet-width) {
-    padding: 50px 0;
+    padding: 50px 0 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 50px 0 12px;
   }
 }
 
@@ -34,7 +38,7 @@
   }
 }
 
-.types li {
+.types__item {
   width: calc(100% / 3 - 50px);
   margin-left: 50px;
   margin-bottom: 50px;
@@ -49,7 +53,7 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     max-width: 400px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   &:nth-of-type(3n-2) {

@@ -17,3 +17,9 @@
     padding: 0;
   }
 }
+
+.container--page-footer {
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}

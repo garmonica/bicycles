@@ -1,21 +1,22 @@
 .page-footer {
-  padding: 80px 35px;
+  padding: 62px 35px 90px;
   text-align: center;
 
+  @media (max-width: $tablet-width) {
+    padding: 22px 0 45px;
+  }
+
   @media (max-width: $mobile-width) {
-    padding: 80px 0;
+    padding: 25px 0 35px;
   }
 }
 
 .page-footer h2 {
+  @include heading-style;
   margin-bottom: 30px;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  color: $additional-dark;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
     font-size: 24px;
   }
 

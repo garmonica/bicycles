@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Наш магазин отбирает только самые лучшие велосипеды для продажи.
+    Широкий выбор, доставка по всей России, крутые аксессуары, профессиональные консультации!">
   <title>Moon - Велосипеды</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/favicon.png" type="image/png">
@@ -33,7 +35,7 @@
       <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
       <div class="page-header__wrapper">
         <section class="intro">
-          <a>
+          <a class="intro__logo-link">
             <img src="img/logo-moon.svg" width="68" height="20" alt="Логотип магазина «Moon»">
           </a>
           <h2>Мы продаем велосипеды</h2>
@@ -44,7 +46,7 @@
           <form action="https://echo.htmlacademy.ru" method="POST">
             <label class="visually-hidden" for="user-name">Ваше имя:</label>
             <input id="user-name" type="text" name="user-name" placeholder="Введите Ваше Имя"
-              pattern="[A-Za-zА-Яа-яЁё]{2,50}" required>
+              pattern="[A-Za-zА-Яа-яЁё]{1,50}" required>
             <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
             <input id="user-phone" type="tel" name="user-phone" placeholder="Введите Ваш номер телефона"
               pattern="\+7[0-9]{10}|8[0-9]{10}" required>
@@ -77,7 +79,8 @@
                   srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1024px)"
                   srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
-                <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x"
+                <!-- 1х: 376px; 2x: 752px -->
+                <img src="img/road-bike.jpg" width="376" height="503" srcset="img/road-bike@2x.jpg 2x"
                   alt="Дорожный велосипед у кирпичной стены">
               </picture>
             </div>
@@ -90,7 +93,9 @@
                   srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1024px)"
                   srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
-                <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="Горный велосипед в горах">
+                <!-- 1х: 376px; 2x: 752px -->
+                <img src="img/mountain-bike.jpg" width="376" height="566" srcset="img/mountain-bike@2x.jpg 2x"
+                  alt="Горный велосипед в горах">
               </picture>
             </div>
           </li>
@@ -102,7 +107,9 @@
                   srcset="img/childrens-bike-tablet.webp 1x, img/childrens-bike-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1024px)"
                   srcset="img/childrens-bike.webp 1x, img/childrens-bike@2x.webp 2x">
-                <img src="img/childrens-bike.jpg" srcset="img/childrens-bike@2x.jpg 2x" alt="Розовый детский велосипед">
+                <!-- 1х: 376px; 2x: 752px -->
+                <img src="img/childrens-bike.jpg" width="376" height="513" srcset="img/childrens-bike@2x.jpg 2x"
+                  alt="Розовый детский велосипед">
               </picture>
             </div>
           </li>
@@ -110,41 +117,50 @@
       </div>
     </section>
     <section class="video" id="video">
-      <h2>Видео про велосипеды</h2>
-      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-      <img src="img/video-preview.jpg" alt="Обложка видео про велосипеды">
-      <button type="button" aria-label="Кнопка воспроизведения видео"></button>
+      <div class="container">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__container">
+          <!-- <img src="img/video-preview.jpg" width="929" height="522" alt="Обложка видео про велосипеды"> -->
+          <video class="video__clip" poster="img/video-preview.jpg"></video>
+          <button class="video__play" type="button" aria-label="Кнопка воспроизведения видео">
+            <svg width="15" height="21">
+              <use xlink:href="img/sprite.svg#icon-video"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="page-footer container" id="contacts">
-    <h2>Как нас найти?</h2>
-    <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-    <div class="map">
-      <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/map.webp 1x, img/map@2x.webp 2x">
-        <img src="img/map.jpg" srcset="img/map@2x.jpg 2x"
-          alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19">
-      </picture>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1623436035258!5m2!1sru!2sru"
-        allowfullscreen="" loading="lazy"></iframe>
+  <footer class="page-footer" id="contacts">
+    <div class="container container--page-footer">
+      <h2>Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <div class="map">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+          <!-- 1х: 957px; 2x: 1914px -->
+          <img src="img/map.jpg" width="957" height="956" srcset="img/map@2x.jpg 2x"
+            alt="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+        </picture>
+      </div>
+      <div class="contacts">
+        <a href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать по указанной почте">
+          <svg width="26" height="20">
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
+          </svg>
+          puteshestviemechta@gmail.ru
+        </a>
+        <a href="tel:+749978468446" aria-label="Позвонить по указанному телефону">
+          <svg width="22" height="24">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          +7 (499) -784-684-46</a>
+      </div>
     </div>
-    <div class="contacts">
-      <a href="mailto:puteshestviemechta@gmail.ru" aria-label="Написать по указанной почте">
-        <svg width="26" height="20">
-          <use xlink:href="img/sprite.svg#icon-mail"></use>
-        </svg>
-        puteshestviemechta@gmail.ru
-      </a>
-      <a href="tel:+749978468446" aria-label="Позвонить по указанному телефону">
-        <svg width="22" height="24">
-          <use xlink:href="img/sprite.svg#icon-phone"></use>
-        </svg>
-        +7 (499) -784-684-46</a>
-    </div>
-
   </footer>
 
   <script type="module" src="js/script.js"></script>

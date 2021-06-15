@@ -38,7 +38,6 @@
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
   list-style: none;
   max-width: 874px;
   margin: 0 auto;
@@ -59,13 +58,13 @@
 }
 
 .main-nav li {
-  margin-right: auto;
+  margin-right: 94px;
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
   }
 
-  &:nth-child(n+4) {
+  &:last-child {
     margin-right: 0;
   }
 }
