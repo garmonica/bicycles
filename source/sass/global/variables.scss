@@ -10,6 +10,7 @@ $additional-dark: #1f1f1f;
 $menu-dark: #48494d;
 $menu-light-bg: #f6f6f6;
 $menu-close: #141517;
+$types-bg: #f6f7f9;
 // viewports
 $desktop-width-only: 1024px;
 $tablet-width: 1023px;
@@ -17,3 +18,6 @@ $mobile-width: 767px;
 // z-index
 $zindex-menu-button: 110;
 $zindex-menu: 100;
+$zindex-types-decoration-high: 90;
+$zindex-types-image: 80;
+$zindex-types-decoration: -10;

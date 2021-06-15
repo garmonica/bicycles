@@ -1,19 +1,21 @@
 .facts {
-  margin-bottom: 130px;
+  padding: 150px 0 110px;
+
+  @media (max-width: $tablet-width) {
+    padding: 5px 0 26px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 5px 0 43px;
+  }
 }
 
 .facts h2 {
+  @include heading-style;
   margin: 0 0 50px;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
-  text-align: center;
-  color: $additional-dark;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 28px;
-    font-size: 24px;
-    line-height: 41px;
   }
 }
 
@@ -42,7 +44,6 @@
   line-height: 34px;
   text-align: center;
   letter-spacing: -0.5px;
-  color: $basic-black;
 
   @media (max-width: $tablet-width) {
     margin-left: 48px;

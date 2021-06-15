@@ -1,3 +1,28 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Opensans", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0;
+  background-color: $basic-white;
+  color: $basic-black;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -5,16 +30,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 .visually-hidden {

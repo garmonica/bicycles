@@ -38,7 +38,7 @@
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
   list-style: none;
   max-width: 874px;
   margin: 0 auto;
@@ -47,7 +47,7 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     max-width: 100%;
     margin: 0;
     padding-top: 100px;
@@ -55,6 +55,18 @@
     width: 100%;
     background: $basic-white;
     border: none;
+  }
+}
+
+.main-nav li {
+  margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  &:nth-child(n+4) {
+    margin-right: 0;
   }
 }
 
@@ -78,6 +90,18 @@
     opacity: 1;
     text-align: left;
     background: $menu-light-bg;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 15px;
+      width: 25px;
+      height: 25px;
+      background: url("../img/arrow-menu.svg") no-repeat center;
+    }
   }
 }
 

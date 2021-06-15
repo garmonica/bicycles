@@ -14,6 +14,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 const smoothLinks = mainNav.querySelectorAll('a');
+
 smoothLinks.forEach((link) => {
   link.addEventListener('click', (evt) => {
     evt.preventDefault();
@@ -23,4 +24,18 @@ smoothLinks.forEach((link) => {
       block: 'start',
     });
   });
+});
+
+const inputTel = document.querySelector('input[type="tel"]');
+
+inputTel.addEventListener('input', () => {
+  if (inputTel.validity.patternMismatch) {
+    inputTel.style.borderColor = '#ff0000';
+    inputTel.style.color = '#ff0000';
+    inputTel.setCustomValidity('Номер телефона должен начинаться с +7 или 8 и содержать 10 цифр');
+  } else {
+    inputTel.style.borderColor = '';
+    inputTel.style.color = '';
+    inputTel.setCustomValidity('');
+  }
 });

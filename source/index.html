@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,9 +10,9 @@
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin>
 </head>
 
-<body class="page__body">
+<body>
   <header class="page-header">
-    <div class="page-header__container container">
+    <div class="container container--page-header">
       <nav class="main-nav main-nav--nojs main-nav--closed">
         <button type="button" aria-label="Кнопка открытия и закрытия меню"></button>
         <ul>
@@ -47,7 +47,7 @@
               pattern="[A-Za-zА-Яа-яЁё]{2,50}" required>
             <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
             <input id="user-phone" type="tel" name="user-phone" placeholder="Введите Ваш номер телефона"
-              pattern="[^A-Za-zА-Яа-яЁё]{7,12}" required>
+              pattern="\+7[0-9]{10}|8[0-9]{10}" required>
             <button type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
@@ -55,7 +55,7 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main>
     <section class="facts container" id="facts">
       <h2>Несколько фактов о нас</h2>
       <ul>
@@ -66,39 +66,48 @@
       </ul>
     </section>
     <section class="types" id="types">
-      <h2>Виды велосипедов</h2>
-      <ul>
-        <li>
-          <h3>Дорожный велосипед</h3>
-          <picture>
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
-            <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" alt="Дорожный велосипед у кирпичной стены">
-          </picture>
-        </li>
-        <li>
-          <h3>Горный велосипед</h3>
-          <picture>
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
-            <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="Горный велосипед в горах">
-          </picture>
-        </li>
-        <li>
-          <h3>Детский велосипед</h3>
-          <picture>
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/childrens-bike-tablet.webp 1x, img/childrens-bike-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="img/childrens-bike.webp 1x, img/childrens-bike@2x.webp 2x">
-            <img src="img/childrens-bike.jpg" srcset="img/childrens-bike@2x.jpg 2x" alt="Розовый детский велосипед">
-          </picture>
-        </li>
-      </ul>
+      <div class="container">
+        <h2>Виды велосипедов</h2>
+        <ul>
+          <li class="types__item">
+            <h3>Дорожный велосипед</h3>
+            <div>
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/road-bike-tablet.webp 1x, img/road-bike-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
+                <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x"
+                  alt="Дорожный велосипед у кирпичной стены">
+              </picture>
+            </div>
+          </li>
+          <li class="types__item">
+            <h3>Горный велосипед</h3>
+            <div>
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/mountain-bike-tablet.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
+                <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="Горный велосипед в горах">
+              </picture>
+            </div>
+          </li>
+          <li class="types__item">
+            <h3>Детский велосипед</h3>
+            <div>
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/childrens-bike-tablet.webp 1x, img/childrens-bike-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/childrens-bike.webp 1x, img/childrens-bike@2x.webp 2x">
+                <img src="img/childrens-bike.jpg" srcset="img/childrens-bike@2x.jpg 2x" alt="Розовый детский велосипед">
+              </picture>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="video" id="video">
       <h2>Видео про велосипеды</h2>
