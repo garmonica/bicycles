@@ -19,6 +19,7 @@
   line-height: 22px;
   color: rgba($basic-black, 0.5);
   position: relative;
+  outline: none;
 
   @media (max-width: $tablet-width) {
     padding: 10px 15px 10px 43px;

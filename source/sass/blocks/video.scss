@@ -1,5 +1,5 @@
 .video {
-  padding: 120px 0 90px;
+  padding: 119px 0 90px;
   background: linear-gradient($dark-bg 79%, $basic-white 79%);
 
   @media (max-width: $tablet-width) {
@@ -63,9 +63,8 @@
   }
 }
 
-.video__clip {
-  width: 100%;
-  height: auto;
+.video__container img {
+  vertical-align: top;
 }
 
 .video__play {
@@ -79,6 +78,7 @@
   border-radius: 50%;
   background: $accent;
   cursor: pointer;
+  outline: none;
 
   @media (max-width: $tablet-width) {
     width: 90px;
