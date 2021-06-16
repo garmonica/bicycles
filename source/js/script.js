@@ -28,14 +28,39 @@ smoothLinks.forEach((link) => {
 
 const inputTel = document.querySelector('input[type="tel"]');
 
-inputTel.addEventListener('input', () => {
-  if (inputTel.validity.patternMismatch) {
-    inputTel.style.borderColor = '#ff0000';
-    inputTel.style.color = '#ff0000';
-    inputTel.setCustomValidity('Номер телефона должен начинаться с +7 или 8 и содержать 10 цифр');
-  } else {
-    inputTel.style.borderColor = '';
-    inputTel.style.color = '';
-    inputTel.setCustomValidity('');
+const onKeypress = (evt) => {
+  if (evt.keyCode < 48 || evt.keyCode > 57) {
+    evt.preventDefault();
   }
-});
+};
+
+const onFocus = () => {
+  if (inputTel.value.length === 0) {
+    inputTel.value = '+7';
+    inputTel.selectionStart = inputTel.value.length;
+  }
+};
+
+const onClick = () => {
+  if (inputTel.selectionStart < 2) {
+    inputTel.selectionStart = inputTel.value.length;
+  }
+};
+
+const onBlur = () => {
+  if (inputTel.value === '+7') {
+    inputTel.value = '';
+  }
+};
+
+const onKeydown = (evt) => {
+  if (evt.key === 'Backspace' && inputTel.value.length <= 2) {
+    evt.preventDefault();
+  }
+};
+
+inputTel.addEventListener('keypress', onKeypress);
+inputTel.addEventListener('focus', onFocus);
+inputTel.addEventListener('click', onClick);
+inputTel.addEventListener('blur', onBlur);
+inputTel.addEventListener('keydown', onKeydown);
