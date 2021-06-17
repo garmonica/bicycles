@@ -1,5 +1,6 @@
 const mainNav = document.querySelector('.main-nav');
 const menuToggle = mainNav.querySelector('button');
+const menuLinks = mainNav.querySelectorAll('a');
 
 mainNav.classList.remove('main-nav--nojs');
 
@@ -13,9 +14,14 @@ menuToggle.addEventListener('click', () => {
   }
 });
 
-const smoothLinks = mainNav.querySelectorAll('a');
+menuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    mainNav.classList.add('main-nav--closed');
+    mainNav.classList.remove('main-nav--opened');
+  });
+});
 
-smoothLinks.forEach((link) => {
+menuLinks.forEach((link) => {
   link.addEventListener('click', (evt) => {
     evt.preventDefault();
     const id = link.getAttribute('href');

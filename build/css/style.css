@@ -757,11 +757,11 @@ a {
   @media (max-width: 1023px) {
     .order {
       margin: 0 auto;
-      padding: 67px 0;
+      padding: 67px 0 27px;
       text-align: center; } }
   @media (max-width: 767px) {
     .order {
-      padding: 67px 15px; } }
+      padding: 67px 15px 27px; } }
 
 .order p {
   margin: 3px 0 20px;
@@ -874,10 +874,10 @@ a {
   padding: 150px 0 110px; }
   @media (max-width: 1023px) {
     .facts {
-      padding: 5px 0 26px; } }
+      padding: 45px 0 26px; } }
   @media (max-width: 767px) {
     .facts {
-      padding: 5px 0 43px; } }
+      padding: 45px 0 43px; } }
 
 .facts h2 {
   margin: 0;

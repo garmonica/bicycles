@@ -5,12 +5,12 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
-    padding: 67px 0;
+    padding: 67px 0 27px;
     text-align: center;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 67px 15px;
+    padding: 67px 15px 27px;
   }
 }
 
