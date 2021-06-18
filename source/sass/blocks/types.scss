@@ -149,6 +149,8 @@
 
   div::before,
   div::after {
+    z-index: $zindex-types-decoration-high;
+
     @media (max-width: $tablet-width) {
       display: none;
     }
@@ -163,6 +165,7 @@
     height: 95px;
     border-width: 17px;
     border-radius: 50%;
+    z-index: $zindex-types-decoration-high;
 
     @media (max-width: $tablet-width) {
       top: -20px;
@@ -170,7 +173,6 @@
       width: 68px;
       height: 68px;
       border-width: 13px;
-      z-index: $zindex-types-decoration-high;
     }
 
     @media (max-width: $mobile-width) {
