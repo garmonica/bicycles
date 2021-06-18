@@ -41,6 +41,12 @@ picture.forEach((item) => {
   item.classList.remove('picture--nojs');
 });
 
+const image = document.querySelectorAll('.image');
+
+image.forEach((item) => {
+  item.classList.remove('image--nojs');
+});
+
 const inputTel = document.querySelector('input[type="tel"]');
 
 if (inputTel) {
