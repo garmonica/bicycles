@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 45px 0 43px;
+    padding: 44px 0 34px;
   }
 }
 
@@ -41,7 +41,7 @@
   padding: 55px 0 0;
   position: relative;
   font-size: 22px;
-  line-height: 34px;
+  line-height: 35px;
   text-align: center;
   letter-spacing: -0.5px;
 
@@ -51,9 +51,14 @@
 
   @media (max-width: $mobile-width) {
     max-width: 263px;
-    margin-bottom: 38px;
-    padding-top: 53px;
+    margin-bottom: 47px;
+    padding-top: 45px;
     font-size: 18px;
+
+    &:first-child {
+      padding-top: 57px;
+      margin-bottom: 34px;
+    }
   }
 
   &::before {
