@@ -621,6 +621,7 @@ a {
     .main-nav a {
       margin-bottom: 30px;
       padding: 16px;
+      padding-right: 55px;
       font-size: 20px;
       line-height: 1.4em;
       font-weight: 400;
@@ -701,13 +702,17 @@ a {
       width: auto;
       margin: 0;
       padding: 25px 22px;
-      background: #131314 url("../img/bg-bike.jpg") no-repeat center/cover; } }
+      background: #131314 url("../img/bg-bike-tablet.jpg") no-repeat center/cover; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .intro {
-      background-image: url("../img/bg-bike@2x.jpg"); } }
+      background-image: url("../img/bg-bike-tablet@2x.jpg"); } }
   @media (max-width: 767px) {
     .intro {
-      padding: 25px 17px; } }
+      padding: 25px 17px;
+      background: #131314 url("../img/bg-bike-mobile.jpg") no-repeat center/cover; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .intro {
+      background-image: url("../img/bg-bike-mobile@2x.jpg"); } }
 
 .intro h2 {
   margin: 23px 0;
