@@ -45,9 +45,41 @@ if (mainNav) {
   });
 }
 
-const inputTel = document.querySelector('input[type="tel"]');
+// Local Storage
 
-if (inputTel) {
+const orderForm = document.querySelector('.order__form');
+
+if (orderForm) {
+  const inputName = orderForm.querySelector('input[type="text"]');
+  const inputTel = orderForm.querySelector('input[type="tel"]');
+
+  let isStorageSupport = true;
+  let storageName = '';
+  let storageTel = '';
+
+  try {
+    storageName = localStorage.getItem('name');
+    storageTel = localStorage.getItem('tel');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  if (storageName || storageTel) {
+    inputName.value = storageName;
+    inputTel.value = storageTel;
+  }
+
+  orderForm.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+
+    if (isStorageSupport) {
+      localStorage.setItem('name', inputName.value);
+      localStorage.setItem('tel', inputTel.value);
+    }
+  });
+
+  // Маска для телефона
+
   const onKeypress = (evt) => {
     if (evt.keyCode < 48 || evt.keyCode > 57) {
       evt.preventDefault();
